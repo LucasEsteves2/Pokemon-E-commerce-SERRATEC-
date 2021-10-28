@@ -45,12 +45,12 @@ body {
   width: 100%;
   height: 100%;
   background: #ffffff;
-  clip-path: circle(150px at 80% 20%);
+  clip-path: circle(120px at 80% 20%);
   transition: 0.5s ease-in-out;
 }
 
 .container1 .card:hover:before{
-  clip-path: circle(300px at 80% -20%);
+  clip-path: circle(250px at 80% -20%);
 }
 
 
