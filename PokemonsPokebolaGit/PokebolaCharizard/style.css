@@ -16,14 +16,15 @@
 }
 
 body {
-  color: #70757a;
   margin: 0;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--background-blue);
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background: #EFEFBB;
+	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+	font-family: rubik;
 }
 
 .pokeball {
@@ -275,7 +276,7 @@ span.flying {
 
 .pokemon img {
   width: 400px;
-  background-image: radial-gradient(#5684b5 60%, transparent 60%);
+  background-image: radial-gradient(#bba47a 60%, transparent 60%);
   background-size: 300px 300px;
   background-repeat: no-repeat;
   background-position: 50% 90%;
