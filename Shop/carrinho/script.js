@@ -30,7 +30,8 @@ for (let i = 0; i < itens.length; i++) {
 
     itens[i].addEventListener("click", () => {
         carrinho(produtos[i])
-        valorFinal(produtos[i])
+        carrinhoFinal(produtos[i])
+         valorFinal(produtos[i])
     })
 
 }
@@ -87,6 +88,51 @@ function qtdCarrinho(produtinho) {
 }
 
 
+function carrinhoFinal()
+{
+    let itensCarrinho = localStorage.getItem("produtoCarrinho");
+
+    itensCarrinho = JSON.parse(itensCarrinho);
+    console.log(itensCarrinho);
+
+    let produtoContainer = document.querySelector(".p2");
+
+    if(itensCarrinho && produtoContainer )
+    {
+        produtoContainer.innerHTML= '';
+        Object.values(itensCarrinho).map( item => 
+            {
+                produtoContainer.innerHTML+= `
+                <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="imagens/${item.nome}.png" alt="" />
+                    <div>
+                      <p>${item.nome}</p>
+                      <small>Preço: ${item.preço}</small>
+                      <br/>
+                      <a href="#">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="number" value="${item.inCart}" /></td>
+                <td>${item.preço* item.inCart}R$</td>
+              </tr>
+    `
+            })
+    }
+
+    let valorTotal = localStorage.getItem("ValorTotal") 
+
+    var final = parseFloat(valorTotal)+20
+
+        document.querySelector(".subtotal").textContent= valorTotal+" R$"
+        document.querySelector(".valorFinal").textContent= final+" R$"
+
+}
+
+
+
 function valorFinal(produtinho)
 {
     let valorTotal = localStorage.getItem("ValorTotal") 
@@ -112,11 +158,10 @@ function carregandoCarrinho() {
 
     let produto = localStorage.getItem('carrinho');
 
-
-
     if (produto) {
         document.querySelector(".qtd_carrinho").textContent = produto;
     }
 }
 carregandoCarrinho()
 
+carrinhoFinal()
