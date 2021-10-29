@@ -13,13 +13,17 @@ body {
 	font-family: rubik;
 	
 }
-a{
+li a{
 
   font-size: 20px;
   color:white !important;
 }
+.promo
+{
+  width: 100%;
+}
 
-a:hover{
+li a:hover{
 
   color:grey !important;
 }

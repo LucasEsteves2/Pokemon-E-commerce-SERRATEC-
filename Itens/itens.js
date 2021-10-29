@@ -50,7 +50,6 @@ for (let i = 0; i < itens.length; i++) {
         event.preventDefault()
         carrinho(produtos[i])
         valorFinal(produtos[i])
-        alert("Adicionado ao carrinho")
     })
 
 }
@@ -73,6 +72,7 @@ function carrinho(produtinho) {
         localStorage.setItem('carrinho', 1)
         document.querySelector(".qtd_carrinho").textContent = 1;
     }
+    alert(`${produtinho.nome} Adicionado ao carrinho`)
 
     qtdCarrinho(produtinho);
 }

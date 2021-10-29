@@ -72,6 +72,7 @@ function carrinho(produtinho) {
         document.querySelector(".qtd_carrinho").textContent = 1;
     }
 
+    alert(`${produtinho.nome} Adicionado ao carrinho`)
     qtdCarrinho(produtinho);
 }
 
