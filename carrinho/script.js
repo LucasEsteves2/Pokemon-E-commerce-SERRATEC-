@@ -1,43 +1,25 @@
 console.log("Hello wordl");
 
-var itens = document.querySelectorAll('.btnComprar');
+var itens = document.querySelectorAll('.card');
 
 let produtos = [
     {
-        nome: 'Buddy_barrier',
+        nome: 'Pokebola1',
         preço: 2000,
-        tag: 'item',
+        tag: 'pokebola',
         inCart: 0
     },
 
     {
-        nome: 'Focus_band',
+        nome: 'Pokebola2',
         preço: 3000,
-        tag: 'item',
+        tag: 'pokebola',
         inCart: 0
     },
     {
-        nome: 'Muscle_Band',
+        nome: 'Pokebola3',
         preço: 4000,
-        tag: 'item',
-        inCart: 0
-    },
-    {
-        nome: 'Score_Shield',
-        preço: 5000,
-        tag: 'item',
-        inCart: 0
-    },
-    {
-        nome: 'Wise_Glasse',
-        preço: 6000,
-        tag: 'item',
-        inCart: 0
-    },
-    {
-        nome: 'Scope_Lens',
-        preço: 7000,
-        tag: 'item',
+        tag: 'pokebola',
         inCart: 0
     }
 
@@ -46,11 +28,10 @@ let produtos = [
 
 for (let i = 0; i < itens.length; i++) {
 
-    itens[i].addEventListener("click", event => {
-        event.preventDefault()
+    itens[i].addEventListener("click", () => {
         carrinho(produtos[i])
-        valorFinal(produtos[i])
-        alert("Adicionado ao carrinho")
+        carrinhoFinal(produtos[i])
+         valorFinal(produtos[i])
     })
 
 }
@@ -107,6 +88,51 @@ function qtdCarrinho(produtinho) {
 }
 
 
+function carrinhoFinal()
+{
+    let itensCarrinho = localStorage.getItem("produtoCarrinho");
+
+    itensCarrinho = JSON.parse(itensCarrinho);
+    console.log(itensCarrinho);
+
+    let produtoContainer = document.querySelector(".p2");
+
+    if(itensCarrinho && produtoContainer )
+    {
+        produtoContainer.innerHTML= '';
+        Object.values(itensCarrinho).map( item => 
+            {
+                produtoContainer.innerHTML+= `
+                <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="imagens/${item.nome}.png" alt="" />
+                    <div>
+                      <p>${item.nome}</p>
+                      <small>Preço: ${item.preço}</small>
+                      <br/>
+                      <a href="#">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="number" value="${item.inCart}" /></td>
+                <td>${item.preço* item.inCart}R$</td>
+              </tr>
+    `
+            })
+    }
+
+    let valorTotal = localStorage.getItem("ValorTotal") 
+
+    var final = parseFloat(valorTotal)+20
+
+        document.querySelector(".subtotal").textContent= valorTotal+" R$"
+        document.querySelector(".valorFinal").textContent= final+" R$"
+
+}
+
+
+
 function valorFinal(produtinho)
 {
     let valorTotal = localStorage.getItem("ValorTotal") 
@@ -132,11 +158,10 @@ function carregandoCarrinho() {
 
     let produto = localStorage.getItem('carrinho');
 
-
-
     if (produto) {
         document.querySelector(".qtd_carrinho").textContent = produto;
     }
 }
 carregandoCarrinho()
 
+carrinhoFinal()
