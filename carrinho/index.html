@@ -1,119 +1,158 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Poke Store-Carrinho</title>
   <link rel="shortcut icon" type="imagex/png" href="../src/tituloShop.png">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    /><link rel="stylesheet" href="./style.css">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
-  <div class="container">
-  <div class="navbar">
-    <div class="logo">
-      <a href="index.html"><img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore" width="125px" /></a>
-    </div>
-    <nav>
-      <ul id="MenuItems">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="account.html">Account</a></li>
-      </ul>
+  <!--NAVBAR-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="#"><img src="src/store.png" alt="" width="130" height="70"
+            class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container ms-5">
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNav ">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">
+                  Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-5" href="../pokemon/pokemon.html">
+
+                  Pokemons</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link ms-5" href="../pokebola/pokebola.html">
+                  Pokebolas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-5" href="../PokeDex/index.html">
+
+                  Pokedex</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-5" href="../Itens/itens.html">
+                  Itens
+                </a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link ms-5" href="../carrinho/index.html">
+                  <img src="../Index/src/shop.png" alt="" width="" height="34"
+                    class="d-inline-block align-text-top ms-5 ">
+                  Carrinho:<span class="qtd_carrinho"> </span>
+                </a>
+              </li>
+          </div>
+
+          </ul>
+        </div>
+      </div>
+      </div>
     </nav>
-    <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
-    <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
-  </div>
-</div>
+
+  </header>
 
 
 
 
 
 
-<img class="promocao"src="imagens/promocao.png">
+  <img class="promocao" src="imagens/promocao.png">
 
-<div class="small-container cart-page">
-</table>
-
-<div class="small-container cart-page">
-  <table>
-    <tr>
-      <th class="pr">Produto</th>
-      <th class="qtd">Quantidade</th>
-      <th>Subtotal</th>
-    </tr>
+  <div class="small-container cart-page">
     </table>
-    <br>
-  <table class="p2">
-   
-  </table>
 
-  <br>
-  <div class="total-price">
-    <table>
-      <tr>
-        <td>Subtotal</td>
-        <td class="subtotal">00</td>
-      </tr>
-      <tr>
-        <td>Cupom Serratec</td>
-        <td class="taxa">-25%</td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td class="valorFinal">00</td>
-      </tr>
-    </table>
-  </div>
-</div>
-<p class="qtd_carrinho"> as</p>
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+          <th class="pr">Produto</th>
+          <th class="qtd">Quantidade</th>
+          <th>Subtotal</th>
+        </tr>
+      </table>
+      <br>
+      <table class="p2">
 
-<div> </div>
+      </table>
 
- <div class="alinhado"> 
-<!-- partial:index.partial.html -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#success_tic">Comprar</button>
-
-<!-- Modal -->
-<div id="success_tic" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <a class="close" href="#" data-dismiss="modal">&times;</a>
-      <div class="page-body">
-    <div class="head">  
-      <h3 style="margin-top:5px;">Compra Realizada com sucesso</h3>
-      <h4 class="compra">Valor:</h4>
+      <br>
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td class="subtotal">00</td>
+          </tr>
+          <tr>
+            <td>Cupom Serratec</td>
+            <td class="taxa">-25%</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td class="valorFinal">00</td>
+          </tr>
+        </table>
+      </div>
     </div>
+    <p class="qtd_carrinho"> as</p>
 
-  <h1 style="text-align:center;"><div class="checkmark-circle">
-  <div class="background"></div>
-  <div class="checkmark draw"></div>
-</div><h1>
+    <div> </div>
 
-  </div>
-</div>
+    <div class="alinhado">
+      <!-- partial:index.partial.html -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#success_tic">Comprar</button>
+
+      <!-- Modal -->
+      <div id="success_tic" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <a class="close" href="#" data-dismiss="modal">&times;</a>
+            <div class="page-body">
+              <div class="head">
+                <h3 style="margin-top:5px;">Compra Realizada com sucesso</h3>
+                <h4 class="compra">Valor:</h4>
+              </div>
+
+              <h1 style="text-align:center;">
+                <div class="checkmark-circle">
+                  <div class="background"></div>
+                  <div class="checkmark draw"></div>
+                </div>
+                <h1>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-  </div>
-</div>
-<script src="script.js"></script>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="script.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 </body>
+
 </html>
