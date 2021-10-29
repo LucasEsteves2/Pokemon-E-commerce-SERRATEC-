@@ -1064,3 +1064,9 @@ body {
 
 
 
+.valor
+{
+color: rgb(47, 251, 74);
+font-weight: bold;
+  font-size: 25px;
+}

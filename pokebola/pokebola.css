@@ -13,6 +13,14 @@ body {
 	font-family: rubik;
 	
 }
+
+.valor
+{
+color: rgb(143, 241, 164);
+font-weight: bold;
+  font-size: 30px;
+}
+
 #nono{
   height:40%;
   width:35%;
