@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Poke Store-Carrinho</title>
+  <link rel="shortcut icon" type="imagex/png" href="../src/tituloShop.png">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -13,11 +15,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     /><link rel="stylesheet" href="./style.css">
-
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="container">
+
+  <div class="container">
   <div class="navbar">
     <div class="logo">
       <a href="index.html"><img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore" width="125px" /></a>
@@ -36,9 +39,14 @@
   </div>
 </div>
 
-<!-- cart items details -->
+
+
+
+
+
+<img class="promocao"src="imagens/promocao.png">
+
 <div class="small-container cart-page">
-  
 </table>
 
 <div class="small-container cart-page">
@@ -62,8 +70,8 @@
         <td class="subtotal">00</td>
       </tr>
       <tr>
-        <td>Taxa</td>
-        <td class="taxa">20,00 R$</td>
+        <td>Cupom Serratec</td>
+        <td class="taxa">-25%</td>
       </tr>
       <tr>
         <td>Total</td>
@@ -76,9 +84,36 @@
 
 <div> </div>
 
+ <div class="alinhado"> 
+<!-- partial:index.partial.html -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#success_tic">Comprar</button>
 
+<!-- Modal -->
+<div id="success_tic" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <a class="close" href="#" data-dismiss="modal">&times;</a>
+      <div class="page-body">
+    <div class="head">  
+      <h3 style="margin-top:5px;">Compra Realizada com sucesso</h3>
+      <h4 class="compra">Valor:</h4>
+    </div>
+
+  <h1 style="text-align:center;"><div class="checkmark-circle">
+  <div class="background"></div>
+  <div class="checkmark draw"></div>
+</div><h1>
+
+  </div>
+</div>
+    </div>
+
+  </div>
+</div>
 <script src="script.js"></script>
-  
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 </body>
 </html>
