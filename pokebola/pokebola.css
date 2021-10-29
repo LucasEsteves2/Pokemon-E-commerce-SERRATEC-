@@ -13,6 +13,24 @@ body {
 	font-family: rubik;
 	
 }
+li a{
+
+  font-size: 20px;
+  color:white !important;
+}
+
+li a:hover{
+
+  color:grey !important;
+}
+
+.valor
+{
+color: rgb(143, 241, 164);
+font-weight: bold;
+  font-size: 30px;
+}
+
 #nono{
   height:40%;
   width:35%;
@@ -52,6 +70,10 @@ body {
   clip-path: circle(250px at 80% -21%);
 }
 
+.promo
+{
+  width: 100%;
+}
 
 
 .container1 .card .imgBx{

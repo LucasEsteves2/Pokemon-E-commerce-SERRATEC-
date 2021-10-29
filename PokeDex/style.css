@@ -7,7 +7,16 @@ body {
 	
 }
 
+a{
 
+	font-size: 20px;
+	color:white !important;
+  }
+  
+  a:hover{
+  
+	color:grey !important;
+  }
 .topo
 {
 	width: 100%;
