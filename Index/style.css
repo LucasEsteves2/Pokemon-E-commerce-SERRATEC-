@@ -16,8 +16,34 @@
   --mewtwofront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);
 }
 
+.container-itens
+{
+
+  margin-top: 100px;
+  margin-bottom: 30px;
+
+}
+
+.container-pokemonn
+{
+
+margin-top: 80px;
+margin-bottom: 45px;
+
+}
 
 
+a{
+
+  font-size: 20px;
+  color:white !important;
+}
+
+a:hover{
+
+  font-size: 22px;
+  color:grey !important;
+}
 .card {
   width: 71.5vw;
   height: 100vw;
@@ -460,11 +486,15 @@ p {
 }
 
 .contaiiner{
- margin-top: 30px;
+ margin-top: 50px;
 }
-
+.desconto
+{
+  padding-top:55px;
+  width: 100%;
+}
 .pokebola{
-
+  
   transition: all 1s;
   cursor: pointer;
 
