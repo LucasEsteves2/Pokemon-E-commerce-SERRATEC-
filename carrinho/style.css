@@ -446,23 +446,38 @@ table {
 .cart-info {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 th {
   text-align: left;
-  padding: 5px;
+  padding: 6px 25px;
+  
   color: #ffffff;
   background: #ff523b;
   font-weight: normal;
 }
+
 td {
-  padding: 10px 5px;
+  padding: 10px 25px;
+}
+.pr
+{
+  padding-left: 40px;
+}
+.qtd
+{
+  padding-left: 350px;
+  margin-left: 35px;
 }
 
 td input {
+
   width: 40px;
   height: 30px;
   padding: 5px;
+  margin-left: 100px;
+
 }
 
 td a {

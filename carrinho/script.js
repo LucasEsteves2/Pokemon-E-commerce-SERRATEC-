@@ -115,7 +115,7 @@ function carrinhoFinal()
                     </div>
                   </div>
                 </td>
-                <td><input type="number" value="${item.inCart}" /></td>
+                <td><input type="text" value="  ${item.inCart}" /></td>
                 <td>${item.preço* item.inCart}R$</td>
               </tr>
     `
