@@ -119,15 +119,19 @@ function carrinhoFinal()
                 <td>${item.preço* item.inCart}R$</td>
               </tr>
     `
+     
             })
+          
     }
 
     let valorTotal = localStorage.getItem("ValorTotal") 
 
-    var final = parseFloat(valorTotal)+20
+    var total = parseFloat(valorTotal);
+    var desconto= (total-total*25/100);
 
-        document.querySelector(".subtotal").textContent= valorTotal+" R$"
-        document.querySelector(".valorFinal").textContent= final+" R$"
+        document.querySelector(".subtotal").textContent=" R$: "+ valorTotal;
+        document.querySelector(".valorFinal").textContent= " R$: "+desconto;
+        document.querySelector(".compra").textContent+=desconto;
 
 }
 
@@ -165,3 +169,6 @@ function carregandoCarrinho() {
 carregandoCarrinho()
 
 carrinhoFinal()
+
+
+
