@@ -4,7 +4,9 @@ function cep(){
     if(cep >= 01000000 && cep <= 39999999 ) { // SUDESTE
        var km = 450;
        var valor = km*0.3;
-       document.querySelector(".frete").textContent=valor;
+
+       var a= `O valor do frete será R\$${valor}\n O prazo para entrega será de 5 dias úteis`
+       document.querySelector(".frete").textContent= valor;
     }
     else if(cep >= 40000000 && cep <= 65999999 ) { //NORDESTE
        var km = 1570;
