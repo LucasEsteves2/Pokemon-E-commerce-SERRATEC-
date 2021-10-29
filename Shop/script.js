@@ -30,7 +30,7 @@ for (let i = 0; i < itens.length; i++) {
 
     itens[i].addEventListener("click", () => {
         carrinho(produtos[i])
-        carrinhoFinal(produtos[i])
+        valorFinal(produtos[i])
     })
 
 }
@@ -87,9 +87,22 @@ function qtdCarrinho(produtinho) {
 }
 
 
-function carrinhoFinal(produtinho)
+function valorFinal(produtinho)
 {
+    let valorTotal = localStorage.getItem("ValorTotal") 
+    
+    //aa
+    if(valorTotal != null)
+    {
+        valorTotal =parseInt(valorTotal);
+        localStorage.setItem("ValorTotal",valorTotal +produtinho.preço)
 
+    }
+    else
+    {
+        localStorage.setItem("ValorTotal",produtinho.preço)
+        
+    }
 }
 
 
@@ -98,6 +111,8 @@ function carrinhoFinal(produtinho)
 function carregandoCarrinho() {
 
     let produto = localStorage.getItem('carrinho');
+
+
 
     if (produto) {
         document.querySelector(".qtd_carrinho").textContent = produto;
