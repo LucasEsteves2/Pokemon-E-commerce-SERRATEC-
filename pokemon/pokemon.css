@@ -27,6 +27,16 @@ body {
     height:65%;
 }
 
+a{
+
+	font-size: 20px;
+	color:white !important;
+  }
+  
+  a:hover{
+  
+	color:grey !important;
+  }
 .container1 .card{
   position: relative;
   width: 263.6px;
