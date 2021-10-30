@@ -5,43 +5,44 @@ var itens = document.querySelectorAll('.btnComprar');
 let produtos = [
     {
         nome: 'Buddy_barrier',
-        preço: 2000,
+        preço: 600,
         tag: 'item',
         inCart: 0
     },
 
     {
         nome: 'Focus_band',
-        preço: 3000,
+        preço: 700,
         tag: 'item',
         inCart: 0
     },
     {
         nome: 'Muscle_Band',
-        preço: 4000,
+        preço: 800,
         tag: 'item',
         inCart: 0
     },
     {
         nome: 'Score_Shield',
-        preço: 5000,
+        preço: 1100,
         tag: 'item',
         inCart: 0
     },
     {
         nome: 'Wise_Glasse',
-        preço: 6000,
+        preço: 900,
         tag: 'item',
         inCart: 0
     },
     {
         nome: 'Scope_Lens',
-        preço: 7000,
+        preço: 100,
         tag: 'item',
         inCart: 0
     }
 
 ];
+
 
 
 for (let i = 0; i < itens.length; i++) {
@@ -50,6 +51,7 @@ for (let i = 0; i < itens.length; i++) {
         event.preventDefault()
         carrinho(produtos[i])
         valorFinal(produtos[i])
+        alert("produto adicionado ao carrinho")
     })
 
 }
@@ -72,7 +74,6 @@ function carrinho(produtinho) {
         localStorage.setItem('carrinho', 1)
         document.querySelector(".qtd_carrinho").textContent = 1;
     }
-    alert(`${produtinho.nome} Adicionado ao carrinho`)
 
     qtdCarrinho(produtinho);
 }
@@ -139,6 +140,5 @@ function carregandoCarrinho() {
     }
 }
 carregandoCarrinho()
-
 
 

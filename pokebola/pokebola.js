@@ -5,38 +5,38 @@ var itens = document.querySelectorAll('.btnComprar');
 let produtos = [
     {
         nome: 'Pokeball',
-        preço: 2000,
+        preço: 200,
         tag: 'pokebola',
         inCart: 0
     },
 
     {
         nome: 'Greatball',
-        preço: 3000,
+        preço: 400,
         tag: 'pokebola',
         inCart: 0
     },
     {
         nome: 'Ultraball',
-        preço: 4000,
+        preço: 600,
         tag: 'pokebola',
         inCart: 0
     },
     {
         nome: 'Masterball',
-        preço: 5000,
+        preço: 1500,
         tag: 'pokebola',
         inCart: 0
     },
     {
         nome: 'Loveball',
-        preço: 6000,
+        preço: 600,
         tag: 'pokebola',
         inCart: 0
     },
     {
         nome: 'DuskBall',
-        preço: 7000,
+        preço: 700,
         tag: 'pokebola',
         inCart: 0
     }
@@ -72,7 +72,6 @@ function carrinho(produtinho) {
         document.querySelector(".qtd_carrinho").textContent = 1;
     }
 
-    alert(`${produtinho.nome} Adicionado ao carrinho`)
     qtdCarrinho(produtinho);
 }
 

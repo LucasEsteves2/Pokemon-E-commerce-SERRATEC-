@@ -109,14 +109,14 @@ function carrinhoFinal()
                     <img src="imagens/${item.nome}.png" alt="" />
                     <div>
                       <p>${item.nome}</p>
-                      <small>Preço: ${item.preço}</small>
+                      <small>Preço:  ${item.preço}</small>
                       <br/>
                       <a href="#">Remove</a>
                     </div>
                   </div>
                 </td>
                 <td><input type="text" value="  ${item.inCart}" /></td>
-                <td>${item.preço* item.inCart}R$</td>
+                <td>R$: ${item.preço* item.inCart}</td>
               </tr>
     `
      
