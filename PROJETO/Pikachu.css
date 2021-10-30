@@ -8,6 +8,12 @@
   --pokeball-grey: #f0f0f0;
   --pokeball-black: #615e69;
 }
+#logo{
+  position: absolute;
+  bottom: 380px;
+
+  left:400px;
+}
 body {
     margin: 0;
     padding: 0;
