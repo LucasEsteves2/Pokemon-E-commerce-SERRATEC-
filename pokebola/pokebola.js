@@ -56,6 +56,7 @@ for (let i = 0; i < itens.length; i++) {
 
 //funcao para adicionar no local storage
 function carrinho(produtinho) {
+    alert(`${produtinho.nome} Adicionado ao carrinho `)
 
     //pegando do localStorage
     let produto = localStorage.getItem('carrinho');
@@ -83,14 +84,14 @@ function qtdCarrinho(produtinho) {
     //se o carrinho nao estive fazio
     if(itensCarrinho!= null)
     {
-        if(itensCarrinho!=undefined)
+        if(itensCarrinho[produtinho.nome]==undefined)
         {
             itensCarrinho = {
                 ...itensCarrinho,
                 [produtinho.nome]: produtinho
             }
         }
-        itensCarrinho[produtinho.nome].inCart +=1
+        itensCarrinho[produtinho.nome].inCart += 1;
     }
     else
     {

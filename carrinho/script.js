@@ -66,14 +66,14 @@ function qtdCarrinho(produtinho) {
     //se o carrinho nao estive fazio
     if(itensCarrinho!= null)
     {
-        if(itensCarrinho!=undefined)
+        if(itensCarrinho[produtinho.nome]==undefined)
         {
             itensCarrinho = {
                 ...itensCarrinho,
                 [produtinho.nome]: produtinho
             }
         }
-        itensCarrinho[produtinho.nome].inCart +=1
+        itensCarrinho[produtinho.nome].inCart += 1;
     }
     else
     {
