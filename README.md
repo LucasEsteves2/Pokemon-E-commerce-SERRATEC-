@@ -7,7 +7,7 @@
   
  <p>
     <h2 align="center">
-      <a href="http://pokestore-serratec.rf.gd/portal.html">  Poke Story </a>
+      <a href="https://lucasesteves2.github.io/Pokemon-E-commerce-SERRATEC-/Index/index.html">  Poke Story </a>
   </h2>
   </p> 
   </br>
