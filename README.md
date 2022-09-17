@@ -1,6 +1,6 @@
 <div align="center">
 <i><h6>Projeto desenvolvido para avaliação de Front End ( referente ao curso: Full Stack Serratec.<br></br>
-<h4>  <a href="http://pokestore-serratec.rf.gd/portal.html"> pokestore-serratec.rf.gd </a></h4>
+<h4>  <a href="https://lucasesteves2.github.io/Pokemon-E-commerce-SERRATEC-/Index/index.html"> pokestore-serratec.rf.gd </a></h4>
 </div>
 <a name="back-to-top">
 
